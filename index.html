@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Arnav Gupta — AI/ML Engineer. Portfolio showcasing deep learning, transformer architectures, and high-accuracy predictive systems." />
+  <title>Arnav Gupta — AI/ML Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Fixed sky canvas -->
+  <canvas id="sky-canvas"></canvas>
+  <div class="sky-overlay"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-bar">
+      <div class="loader-fill" id="loader-fill"></div>
+    </div>
+    <span class="loader-text" id="loader-text">Loading…</span>
+  </div>
+
+  <!-- ═══════════  HEADER  ═══════════ -->
+  <header class="site-header" id="site-header">
+    <a href="#" class="logo">Arnav Gupta</a>
+    <div class="header-links">
+      <a href="https://github.com/NotArnav03" target="_blank" rel="noopener noreferrer" class="header-link">GitHub</a>
+      <a href="https://www.linkedin.com/in/arnav-gupta-099838329/" target="_blank" rel="noopener noreferrer"
+        class="header-link">LinkedIn</a>
+      <a href="./ArnavGuptaResume.pdf" download class="header-link">Resume ↓</a>
+      <a href="mailto:arnav.g1010@gmail.com" class="cta-pill" id="cta-get-in-touch">Get in touch</a>
+    </div>
+  </header>
+
+  <main class="content">
+
+    <!-- ═══════════  HERO  ═══════════ -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <p class="hero-subtitle">Hey, I'm Arnav</p>
+        <h1 class="hero-title">AI/ML<br />Engineer</h1>
+        <div class="services-row">
+          <span class="service">Deep Learning</span>
+          <span class="service-dot">·</span>
+          <span class="service">Transformers</span>
+          <span class="service-dot">·</span>
+          <span class="service">NLP</span>
+          <span class="service-dot">·</span>
+          <span class="service">AI Research</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════  ABOUT  ═══════════ -->
+    <section class="about" id="about">
+      <div class="float-card about-card">
+        <h2 class="section-label">About Me</h2>
+        <p class="about-text">AI/ML Developer specializing in deep learning, transformer architectures, and
+          high-accuracy predictive systems. Experienced in building production-oriented models for fraud detection,
+          clinical decision support, and audio classification with a strong focus on performance, reliability, and
+          scalability.</p>
+        <p class="about-text">Multi-discipline achiever — Multiple Olympiad Medalist (STEM), National-Level Gold
+          Medalist in Skating, and Black Belt in Karate — bringing the same precision and drive to AI research and
+          real-world deployment.</p>
+        <div class="about-details">
+          <div class="detail-item">
+            <span class="detail-label">Education</span>
+            <span class="detail-value">B.Tech CS (AI/ML), VIT Pune</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Languages</span>
+            <span class="detail-value">English · Marathi · Hindi · Japanese</span>
+          </div>
+        </div>
+        <div class="about-tags">
+          <span class="tag">Python</span>
+          <span class="tag">C++</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">TabNet</span>
+          <span class="tag">Flask</span>
+          <span class="tag">React</span>
+          <span class="tag">Transformers</span>
+          <span class="tag">CNNs</span>
+          <span class="tag">LLMs</span>
+          <span class="tag">NLP</span>
+          <span class="tag">DSA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════  PROJECTS  ═══════════ -->
+    <section class="work" id="selected-work">
+      <h2 class="section-label work-label">Selected Work</h2>
+
+      <div class="projects-grid">
+
+        <a href="https://github.com/NotArnav03" target="_blank" rel="noopener noreferrer"
+          class="float-card project-card">
+          <div class="card-body">
+            <div class="project-number">01</div>
+            <div class="project-name">SecureBank</div>
+            <div class="project-desc">Fintech Fraud Detection System</div>
+            <div class="project-meta">Mar 2025 – Jun 2025</div>
+            <div class="project-detail">Uncertainty-aware fraud detection pipeline using TabNet, ensemble models, and
+              feature engineering. Optimized for CPU efficiency and scalable deployment.</div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+
+        <a href="https://github.com/NotArnav03/SafePay-AI" target="_blank" rel="noopener noreferrer"
+          class="float-card project-card">
+          <div class="card-body">
+            <div class="project-number">02</div>
+            <div class="project-name">SafePay AI</div>
+            <div class="project-desc">Real-Time Payment Fraud Prevention</div>
+            <div class="project-meta">Hackathon Project</div>
+            <div class="project-detail">Dual-model pipeline combining NLP-based SMS scam analysis with transaction risk
+              scoring, achieving ~85–90% accuracy with explainable risk assessments.</div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+
+        <a href="https://github.com/NotArnav03/dynamic-clinical-pathway-generator" target="_blank"
+          rel="noopener noreferrer" class="float-card project-card">
+          <div class="card-body">
+            <div class="project-number">03</div>
+            <div class="project-name">ClinPath AI</div>
+            <div class="project-desc">Dynamic Clinical Pathway Generator</div>
+            <div class="project-meta">Hackathon Project</div>
+            <div class="project-detail">Rule-based clinical pathway engine integrated with Groq-hosted LLaMA 3.1 LLM for
+              patient-specific care workflows with interactive flowchart visualization.</div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+
+        <a href="https://github.com/NotArnav03/gtzan-music-genre-classification" target="_blank"
+          rel="noopener noreferrer" class="float-card project-card">
+          <div class="card-body">
+            <div class="project-number">04</div>
+            <div class="project-name">GenreSOTA</div>
+            <div class="project-desc">Music Genre Classification (GTZAN)</div>
+            <div class="project-meta">Sep 2025 – Jan 2026</div>
+            <div class="project-detail">Deep CNN-Transformer model with temporal attention on spectrogram data. Achieved
+              ~95% classification accuracy with optimized training workflows.</div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+
+        <a href="https://github.com/NotArnav03/asris" target="_blank" rel="noopener noreferrer"
+          class="float-card project-card">
+          <div class="card-body">
+            <div class="project-number">05</div>
+            <div class="project-name">ASRIS</div>
+            <div class="project-desc">AI Resume Ranking System</div>
+            <div class="project-detail">Intelligent resume screening and ranking engine. Uses NLP to match candidate
+              skills against job descriptions with explainable scoring.</div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+
+        <a href="https://github.com/NotArnav03" target="_blank" rel="noopener noreferrer"
+          class="float-card project-card">
+          <div class="card-body">
+            <div class="project-number">06</div>
+            <div class="project-name">SkillDecay.ai</div>
+            <div class="project-desc">AI Skill Tracking System</div>
+            <div class="project-detail">Tracks how technical skills decay over time using ML models. Provides
+              personalised learning recommendations to keep your edge sharp.</div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+
+        <a href="https://github.com/NotArnav03" target="_blank" rel="noopener noreferrer"
+          class="float-card project-card">
+          <div class="card-body">
+            <div class="project-number">07</div>
+            <div class="project-name">ReasonLLM</div>
+            <div class="project-desc">Reasoning LLM Research Project</div>
+            <div class="project-detail">Self-improving reasoning framework using DPO training loops. Builds iterative
+              trajectory refinement for enhanced LLM logic.</div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ═══════════  PUBLICATIONS  ═══════════ -->
+    <section class="publications" id="publications">
+      <h2 class="section-label">Publications</h2>
+      <div class="float-card pub-card">
+        <div class="pub-title">Adaptive TabNet–β-VAE Fusion Ensemble for Uncertainty-Aware Fraud Detection</div>
+        <div class="pub-venue">Springer Lecture Notes in Networks and Systems (LNNS)</div>
+        <div class="pub-status">Published · ICAIN 2025</div>
+      </div>
+    </section>
+
+    <!-- ═══════════  EDUCATION  ═══════════ -->
+    <section class="education" id="education">
+      <h2 class="section-label">Education</h2>
+      <div class="float-card edu-card">
+        <div class="edu-degree">B.Tech in Computer Science</div>
+        <div class="edu-spec">Artificial Intelligence & Machine Learning</div>
+        <div class="edu-school">Vishwakarma Institute of Technology (VIT), Pune</div>
+        <div class="edu-date">October 2024 – Present</div>
+      </div>
+    </section>
+
+    <!-- ═══════════  CONTACT  ═══════════ -->
+    <section class="contact" id="contact">
+      <h2 class="section-label">Get In Touch</h2>
+      <div class="contact-links">
+        <a href="mailto:arnav.g1010@gmail.com" class="contact-link">arnav.g1010@gmail.com</a>
+        <a href="tel:+919112200538" class="contact-link">+91-9112200538</a>
+        <a href="https://github.com/NotArnav03" target="_blank" rel="noopener noreferrer"
+          class="contact-link">GitHub</a>
+        <a href="https://linkedin.com/in/arnav-gupta" target="_blank" rel="noopener noreferrer"
+          class="contact-link">LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="site-footer">
+    <p>&copy; 2026 Arnav Gupta. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    window.__loaderFallback = setTimeout(function () {
+      var l = document.getElementById('loader');
+      if (l && !l.classList.contains('hidden')) l.classList.add('hidden');
+    }, 5000);
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>
