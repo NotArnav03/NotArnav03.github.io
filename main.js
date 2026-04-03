@@ -89,3 +89,43 @@ function animate() {
     requestAnimationFrame(animate);
 }
 animate();
+
+/* ── Scroll-reveal for float-cards (Intersection Observer) ─────────── */
+const revealObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    },
+    { threshold: 0.12 }
+);
+
+document.querySelectorAll('.float-card').forEach((card) => {
+    revealObserver.observe(card);
+});
+
+/* ── Hamburger / mobile nav toggle ─────────────────────────────────── */
+const navToggle = document.getElementById('nav-toggle');
+const headerLinks = document.getElementById('header-links');
+
+if (navToggle && headerLinks) {
+    navToggle.addEventListener('click', () => {
+        const isOpen = headerLinks.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    // Close menu when a nav link is clicked
+    headerLinks.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+            headerLinks.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        });
+    });
+}
+
+/* Scroll-reveal for float-cards (Intersection Observer) */

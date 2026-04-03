@@ -8,6 +8,18 @@
     content="Arnav Gupta — AI/ML Engineer. Portfolio showcasing deep learning, transformer architectures, and high-accuracy predictive systems." />
   <title>Arnav Gupta — AI/ML Engineer</title>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%236EC1FF'/><text x='16' y='21' text-anchor='middle' fill='white' font-family='Georgia,serif' font-size='14' font-weight='600'>AG</text></svg>" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arnav Gupta — AI/ML Engineer" />
+  <meta property="og:description" content="AI/ML portfolio: deep learning, transformers, NLP, and published research." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://notarnav03.github.io" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Arnav Gupta — AI/ML Engineer" />
+  <meta name="twitter:description" content="AI/ML portfolio: deep learning, transformers, NLP, and published research." />
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,7 +47,10 @@
   <!-- ═══════════  HEADER  ═══════════ -->
   <header class="site-header" id="site-header">
     <a href="#" class="logo">Arnav Gupta</a>
-    <div class="header-links">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="header-links" id="header-links">
       <a href="https://github.com/NotArnav03" target="_blank" rel="noopener noreferrer" class="header-link">GitHub</a>
       <a href="https://www.linkedin.com/in/arnav-gupta-099838329/" target="_blank" rel="noopener noreferrer"
         class="header-link">LinkedIn</a>
@@ -105,30 +120,23 @@
     <section class="work" id="selected-work">
       <h2 class="section-label work-label">Selected Work</h2>
 
-      <div class="projects-grid">
-
-        <a href="https://github.com/NotArnav03" target="_blank" rel="noopener noreferrer"
-          class="float-card project-card">
-          <div class="card-body">
-            <div class="project-number">01</div>
-            <div class="project-name">SecureBank</div>
-            <div class="project-desc">Fintech Fraud Detection System</div>
-            <div class="project-meta">Mar 2025 – Jun 2025</div>
-            <div class="project-detail">Uncertainty-aware fraud detection pipeline using TabNet, ensemble models, and
-              feature engineering. Optimized for CPU efficiency and scalable deployment.</div>
-          </div>
-          <span class="project-arrow">↗</span>
-        </a>
+            <div class="projects-grid">
 
         <a href="https://github.com/NotArnav03/SafePay-AI" target="_blank" rel="noopener noreferrer"
           class="float-card project-card">
           <div class="card-body">
-            <div class="project-number">02</div>
+            <div class="project-number">01</div>
             <div class="project-name">SafePay AI</div>
             <div class="project-desc">Real-Time Payment Fraud Prevention</div>
             <div class="project-meta">Hackathon Project</div>
             <div class="project-detail">Dual-model pipeline combining NLP-based SMS scam analysis with transaction risk
               scoring, achieving ~85–90% accuracy with explainable risk assessments.</div>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Flask</span>
+            </div>
           </div>
           <span class="project-arrow">↗</span>
         </a>
@@ -136,12 +144,18 @@
         <a href="https://github.com/NotArnav03/dynamic-clinical-pathway-generator" target="_blank"
           rel="noopener noreferrer" class="float-card project-card">
           <div class="card-body">
-            <div class="project-number">03</div>
+            <div class="project-number">02</div>
             <div class="project-name">ClinPath AI</div>
             <div class="project-desc">Dynamic Clinical Pathway Generator</div>
             <div class="project-meta">Hackathon Project</div>
             <div class="project-detail">Rule-based clinical pathway engine integrated with Groq-hosted LLaMA 3.1 LLM for
               patient-specific care workflows with interactive flowchart visualization.</div>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">LLaMA 3.1</span>
+              <span class="tech-tag">Groq</span>
+              <span class="tech-tag">React</span>
+            </div>
           </div>
           <span class="project-arrow">↗</span>
         </a>
@@ -149,12 +163,18 @@
         <a href="https://github.com/NotArnav03/gtzan-music-genre-classification" target="_blank"
           rel="noopener noreferrer" class="float-card project-card">
           <div class="card-body">
-            <div class="project-number">04</div>
+            <div class="project-number">03</div>
             <div class="project-name">GenreSOTA</div>
             <div class="project-desc">Music Genre Classification (GTZAN)</div>
-            <div class="project-meta">Sep 2025 – Jan 2026</div>
+            <div class="project-meta">Sep 2024 – Jan 2025</div>
             <div class="project-detail">Deep CNN-Transformer model with temporal attention on spectrogram data. Achieved
               ~95% classification accuracy with optimized training workflows.</div>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">CNN</span>
+              <span class="tech-tag">Transformers</span>
+            </div>
           </div>
           <span class="project-arrow">↗</span>
         </a>
@@ -162,35 +182,36 @@
         <a href="https://github.com/NotArnav03/asris" target="_blank" rel="noopener noreferrer"
           class="float-card project-card">
           <div class="card-body">
-            <div class="project-number">05</div>
+            <div class="project-number">04</div>
             <div class="project-name">ASRIS</div>
             <div class="project-desc">AI Resume Ranking System</div>
             <div class="project-detail">Intelligent resume screening and ranking engine. Uses NLP to match candidate
               skills against job descriptions with explainable scoring.</div>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Flask</span>
+            </div>
           </div>
           <span class="project-arrow">↗</span>
         </a>
 
-        <a href="https://github.com/NotArnav03" target="_blank" rel="noopener noreferrer"
+        <a href="https://github.com/NotArnav03/mindmapper" target="_blank" rel="noopener noreferrer"
           class="float-card project-card">
           <div class="card-body">
-            <div class="project-number">06</div>
-            <div class="project-name">SkillDecay.ai</div>
-            <div class="project-desc">AI Skill Tracking System</div>
-            <div class="project-detail">Tracks how technical skills decay over time using ML models. Provides
-              personalised learning recommendations to keep your edge sharp.</div>
-          </div>
-          <span class="project-arrow">↗</span>
-        </a>
-
-        <a href="https://github.com/NotArnav03" target="_blank" rel="noopener noreferrer"
-          class="float-card project-card">
-          <div class="card-body">
-            <div class="project-number">07</div>
-            <div class="project-name">ReasonLLM</div>
-            <div class="project-desc">Reasoning LLM Research Project</div>
-            <div class="project-detail">Self-improving reasoning framework using DPO training loops. Builds iterative
-              trajectory refinement for enhanced LLM logic.</div>
+            <div class="project-number">05</div>
+            <div class="project-name">MindMapper</div>
+            <div class="project-desc">AI Clinical Documentation Assistant</div>
+            <div class="project-detail">Fine-tuned Mistral-7B-Instruct with QLoRA on therapy session transcripts.
+              Automates SOAP note generation and interactive emotion timeline visualization with fully local,
+              privacy-preserving inference.</div>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Mistral-7B</span>
+              <span class="tech-tag">QLoRA</span>
+              <span class="tech-tag">Gradio</span>
+            </div>
           </div>
           <span class="project-arrow">↗</span>
         </a>
@@ -205,6 +226,7 @@
         <div class="pub-title">Adaptive TabNet–β-VAE Fusion Ensemble for Uncertainty-Aware Fraud Detection</div>
         <div class="pub-venue">Springer Lecture Notes in Networks and Systems (LNNS)</div>
         <div class="pub-status">Published · ICAIN 2025</div>
+        <a href="#" class="pub-link" target="_blank" rel="noopener noreferrer">View Paper ↗</a>
       </div>
     </section>
 
@@ -224,10 +246,9 @@
       <h2 class="section-label">Get In Touch</h2>
       <div class="contact-links">
         <a href="mailto:arnav.g1010@gmail.com" class="contact-link">arnav.g1010@gmail.com</a>
-        <a href="tel:+919112200538" class="contact-link">+91-9112200538</a>
         <a href="https://github.com/NotArnav03" target="_blank" rel="noopener noreferrer"
           class="contact-link">GitHub</a>
-        <a href="https://linkedin.com/in/arnav-gupta" target="_blank" rel="noopener noreferrer"
+        <a href="https://www.linkedin.com/in/arnav-gupta-099838329/" target="_blank" rel="noopener noreferrer"
           class="contact-link">LinkedIn</a>
       </div>
     </section>
