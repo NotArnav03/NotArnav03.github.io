@@ -3,16 +3,6 @@ const canvas = document.getElementById("neural-canvas");
 const ctx    = canvas.getContext("2d");
 let W=0, H=0, CX=0, CY=0, SCALE=0;
 
-function resize() {
-  W = canvas.width  = window.innerWidth;
-  H = canvas.height = window.innerHeight;
-  CX = W / 2; CY = H * 0.54;
-  SCALE = Math.min(W, H) * 0.145;
-  buildGrid();
-}
-resize();
-window.addEventListener("resize", resize, { passive:true });
-
 /* Loss function ------------------------------------------------ */
 function loss(x, y) {
   return (x*x*0.32 + y*y*0.48)
@@ -35,6 +25,16 @@ function project(wx, wy, wz) {
   const ry = wx*sAZ + wy*cAZ;
   return [CX + rx*SCALE, CY + (ry*cEL - wz*sEL)*SCALE];
 }
+
+function resize() {
+  W = canvas.width  = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+  CX = W / 2; CY = H * 0.54;
+  SCALE = Math.min(W, H) * 0.145;
+  buildGrid();
+}
+resize();
+window.addEventListener("resize", resize, { passive:true });
 
 /* Gradient descent path ---------------------------------------- */
 let gdPath = [];
