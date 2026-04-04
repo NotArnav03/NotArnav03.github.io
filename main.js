@@ -221,15 +221,15 @@ function draw() {
   requestAnimationFrame(draw);
 }
 
-/* Loader ----------------------------------------------------- */
-window.addEventListener("DOMContentLoaded", () => {
+/* Init — script is at end of <body>, DOM is ready immediately */
+(function init() {
+  /* Hide loader */
   const loader = document.getElementById("loader");
   if (loader) {
     setTimeout(() => {
-      loader.style.opacity = "0";
-      loader.style.transition = "opacity 0.6s ease";
-      setTimeout(() => loader.style.display = "none", 600);
-    }, 900);
+      loader.classList.add("hidden");
+      setTimeout(() => { loader.style.display = "none"; }, 850);
+    }, 700);
   }
 
   /* Intersection observer for float-cards */
@@ -277,4 +277,4 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   draw();
-});
+}());
