@@ -268,20 +268,17 @@ if (contactLines) contactInfoIO.observe(contactLines.closest('section'));
       ];
     },
     skills() {
-      function bar(n) {
-        const filled = Math.round(n / 5);
-        return '[' + '█'.repeat(filled) + '░'.repeat(20 - filled) + '] ' + n + '%';
-      }
+      const bar = '[████████████████████] 100%';
       return [
-        'Python       ' + bar(90),
-        'Scikit-learn ' + bar(85),
-        'PyTorch      ' + bar(82),
-        'Deep Learning' + bar(85),
-        'NLP          ' + bar(80),
-        'CNNs         ' + bar(85),
-        'C++          ' + bar(70),
-        'LLMs         ' + bar(75),
-        'Flask        ' + bar(75),
+        'Python        ' + bar,
+        'Scikit-learn  ' + bar,
+        'PyTorch       ' + bar,
+        'Deep Learning ' + bar,
+        'NLP           ' + bar,
+        'CNNs          ' + bar,
+        'C++           ' + bar,
+        'LLMs          ' + bar,
+        'Flask         ' + bar,
       ];
     },
     projects() {
