@@ -210,20 +210,32 @@ const contactInfoIO = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (!e.isIntersecting || !contactLines || contactLines.children.length > 0) return;
     const info = [
-      '$ whoami',
-      'Arnav Gupta',
-      '',
-      '$ cat contact.cfg',
-      '> EMAIL    arnav.g1010@gmail.com',
-      '> GITHUB   github.com/NotArnav03',
-      '> LINKEDIN linkedin.com/in/arnav-gupta-099838329',
-      '> LOCATION VIT Pune, India',
+      { text: '$ whoami' },
+      { text: 'Arnav Gupta' },
+      { text: '' },
+      { text: '$ cat contact.cfg' },
+      { text: '> EMAIL    ', link: 'mailto:arnav.g1010@gmail.com',                        label: 'arnav.g1010@gmail.com' },
+      { text: '> GITHUB   ', link: 'https://github.com/NotArnav03',                       label: 'github.com/NotArnav03' },
+      { text: '> LINKEDIN ', link: 'https://www.linkedin.com/in/arnav-gupta-099838329/',  label: 'linkedin.com/in/arnav-gupta-099838329' },
+      { text: '> LOCATION VIT Pune, India' },
     ];
     let i = 0;
     function addLine() {
       if (i >= info.length) return;
+      const entry = info[i++];
       const p = document.createElement('p');
-      p.textContent = info[i++];
+      if (entry.link) {
+        p.appendChild(document.createTextNode(entry.text));
+        const a = document.createElement('a');
+        a.href = entry.link;
+        a.textContent = entry.label;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.style.cssText = 'color:#00FF41;text-decoration:underline;text-underline-offset:3px;';
+        p.appendChild(a);
+      } else {
+        p.textContent = entry.text;
+      }
       p.style.opacity = '0';
       contactLines.appendChild(p);
       setTimeout(() => { p.style.transition = 'opacity 0.3s'; p.style.opacity = '1'; }, 30);
