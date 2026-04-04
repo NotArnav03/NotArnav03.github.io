@@ -48,8 +48,13 @@ a { text-decoration:none; color:inherit; }
   background: var(--bg);
   transition: opacity 0.8s ease, visibility 0.8s ease;
   gap: 20px;
+  /* CSS fallback: auto-hide after 1.4s even if JS fails */
+  animation: loader-auto-hide 0.7s ease 1.4s forwards;
 }
 .loader.hidden { opacity:0; visibility:hidden; pointer-events:none; }
+@keyframes loader-auto-hide {
+  to { opacity:0; visibility:hidden; pointer-events:none; }
+}
 .loader-ring {
   width: 40px; height: 40px;
   border: 2px solid rgba(0,212,255,0.15);
