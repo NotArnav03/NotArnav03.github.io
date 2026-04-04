@@ -1,89 +1,298 @@
 <!DOCTYPE html><html lang="en"><head>
-<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Arnav Gupta — AI/ML Engineer. Portfolio showcasing deep learning, transformer architectures, and high-accuracy predictive systems." />
-<title>Arnav Gupta — AI/ML Engineer</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27 viewBox%3D%270 0 32 32%27%3E%3Crect width%3D%2732%27 height%3D%2732%27 rx%3D%278%27 fill%3D%27%2300D4FF%27%2F%3E%3Ctext x%3D%2716%27 y%3D%2721%27 text-anchor%3D%27middle%27 fill%3D%27%23060C18%27 font-family%3D%27Georgia%2Cserif%27 font-size%3D%2713%27%3EAG%3C%2Ftext%3E%3C%2Fsvg%3E" />
-<meta property="og:title" content="Arnav Gupta — AI/ML Engineer" />
-<meta property="og:description" content="AI/ML portfolio: deep learning, transformers, NLP, and published research." />
-<meta property="og:type" content="website" /><meta property="og:url" content="https://notarnav03.github.io" />
-<meta name="twitter:card" content="summary" />
-<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" /></head><body>
-<canvas id="neural-canvas"></canvas>
-<div class="loader" id="loader"><div class="loader-ring"></div><span class="loader-label">Initializing</span></div>
-<header class="site-header" id="site-header"><a href="#" class="logo">Arnav Gupta</a>
-<button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-<div class="header-links" id="header-links">
-<a href="https://github.com/NotArnav03" target="_blank" rel="noopener noreferrer" class="header-link">GitHub</a>
-<a href="https://www.linkedin.com/in/arnav-gupta-099838329/" target="_blank" rel="noopener noreferrer" class="header-link">LinkedIn</a>
-<a href="./ArnavGuptaResume.pdf" download class="header-link">Resume ↓</a>
-<a href="mailto:arnav.g1010@gmail.com" class="cta-pill">Get in touch</a>
-</div></header>
-<main class="content">
-<section class="hero" id="hero"><div class="hero-grid-overlay"></div><div class="hero-inner">
-<p class="hero-subtitle">Hey, I’m Arnav</p>
-<h1 class="hero-title">AI/ML<br />Engineer</h1>
-<div class="hero-typewriter"><span id="typewriter-text"></span><span class="typewriter-cursor">_</span></div>
-</div></section>
-<section class="about" id="about"><div class="float-card about-card">
-<h2 class="section-label">About Me</h2>
-<p class="about-text">AI/ML Developer specializing in deep learning, transformer architectures, and high-accuracy predictive systems. Experienced in building production-oriented models for fraud detection, clinical decision support, and audio classification with a strong focus on performance, reliability, and scalability.</p>
-<p class="about-text">Multi-discipline achiever — Multiple Olympiad Medalist (STEM), National-Level Gold Medalist in Skating, and Black Belt in Karate — bringing the same precision and drive to AI research and real-world deployment.</p>
-<div class="about-details"><div class="detail-item"><span class="detail-label">Education</span><span class="detail-value">B.Tech CS (AI/ML), VIT Pune</span></div><div class="detail-item"><span class="detail-label">Languages</span><span class="detail-value">English · Marathi · Hindi · Japanese</span></div></div>
-<div class="about-tags"><span class="tag">Python</span><span class="tag">C++</span><span class="tag">PyTorch</span><span class="tag">Scikit-learn</span><span class="tag">TabNet</span><span class="tag">Flask</span><span class="tag">React</span><span class="tag">Transformers</span><span class="tag">CNNs</span><span class="tag">LLMs</span><span class="tag">NLP</span><span class="tag">DSA</span></div>
-</div></section>
-<section class="publications" id="publications"><h2 class="section-label">Publications</h2>
-<div class="pub-featured-wrap"><div class="float-card pub-card">
-<div class="pub-badge">Springer · ICAIN 2025</div>
-<div class="pub-title">Adaptive TabNet–β-VAE Fusion Ensemble for Uncertainty-Aware Fraud Detection</div>
-<div class="pub-venue">Lecture Notes in Networks and Systems (LNNS)</div>
-<a href="#" class="pub-link" target="_blank" rel="noopener noreferrer">View Paper ↗</a>
-</div></div></section>
-<section class="work" id="selected-work"><h2 class="section-label work-label">Selected Work</h2>
-<div class="projects-grid">
-<a href="https://github.com/NotArnav03/SafePay-AI" target="_blank" rel="noopener noreferrer" class="float-card project-card">
-<div class="card-body"><div class="project-number">01</div><div class="project-name">SafePay AI</div>
-<div class="project-desc">Real-Time Payment Fraud Prevention</div><div class="project-meta">Hackathon Project</div>
-<div class="project-detail">Dual-model pipeline combining NLP-based SMS scam analysis with transaction risk scoring, achieving ~85–90% accuracy with explainable risk assessments.</div>
-<div class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">NLP</span><span class="tech-tag">Scikit-learn</span><span class="tech-tag">Flask</span></div></div>
-<span class="project-arrow">↗</span></a>
-<a href="https://github.com/NotArnav03/dynamic-clinical-pathway-generator" target="_blank" rel="noopener noreferrer" class="float-card project-card">
-<div class="card-body"><div class="project-number">02</div><div class="project-name">ClinPath AI</div>
-<div class="project-desc">Dynamic Clinical Pathway Generator</div><div class="project-meta">Hackathon Project</div>
-<div class="project-detail">Rule-based clinical pathway engine integrated with Groq-hosted LLaMA 3.1 for patient-specific care workflows with interactive flowchart visualization.</div>
-<div class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">LLaMA 3.1</span><span class="tech-tag">Groq</span><span class="tech-tag">React</span></div></div>
-<span class="project-arrow">↗</span></a>
-<a href="https://github.com/NotArnav03/gtzan-music-genre-classification" target="_blank" rel="noopener noreferrer" class="float-card project-card">
-<div class="card-body"><div class="project-number">03</div><div class="project-name">GenreSOTA</div>
-<div class="project-desc">Music Genre Classification (GTZAN)</div><div class="project-meta">Sep 2024 – Jan 2025</div>
-<div class="project-detail">Deep CNN-Transformer model with temporal attention on spectrogram data. Achieved ~95% classification accuracy with optimized training workflows.</div>
-<div class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">PyTorch</span><span class="tech-tag">CNN</span><span class="tech-tag">Transformers</span></div></div>
-<span class="project-arrow">↗</span></a>
-<a href="https://github.com/NotArnav03/asris" target="_blank" rel="noopener noreferrer" class="float-card project-card">
-<div class="card-body"><div class="project-number">04</div><div class="project-name">ASRIS</div>
-<div class="project-desc">AI Resume Ranking System</div>
-<div class="project-detail">Intelligent resume screening and ranking engine using NLP to match candidate skills against job descriptions with explainable scoring.</div>
-<div class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">NLP</span><span class="tech-tag">Scikit-learn</span><span class="tech-tag">Flask</span></div></div>
-<span class="project-arrow">↗</span></a>
-<a href="https://github.com/NotArnav03/mindmapper" target="_blank" rel="noopener noreferrer" class="float-card project-card">
-<div class="card-body"><div class="project-number">05</div><div class="project-name">MindMapper</div>
-<div class="project-desc">AI Clinical Documentation Assistant</div>
-<div class="project-detail">Fine-tuned Mistral-7B-Instruct with QLoRA on therapy session transcripts. Automates SOAP note generation and emotion timeline visualization with fully local, privacy-preserving inference.</div>
-<div class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">Mistral-7B</span><span class="tech-tag">QLoRA</span><span class="tech-tag">Gradio</span></div></div>
-<span class="project-arrow">↗</span></a>
-</div></section>
-<section class="education" id="education"><h2 class="section-label">Education</h2>
-<div class="float-card edu-card"><div class="edu-degree">B.Tech in Computer Science</div>
-<div class="edu-spec">Artificial Intelligence &amp; Machine Learning</div>
-<div class="edu-school">Vishwakarma Institute of Technology (VIT), Pune</div>
-<div class="edu-date">October 2024 – Present</div></div></section>
-<section class="contact" id="contact"><h2 class="section-label">Get In Touch</h2>
-<div class="contact-links">
-<a href="mailto:arnav.g1010@gmail.com" class="contact-link">arnav.g1010@gmail.com</a>
-<a href="https://github.com/NotArnav03" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
-<a href="https://www.linkedin.com/in/arnav-gupta-099838329/" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
-</div></section>
-</main>
-<footer class="site-footer"><p>&copy; 2026 Arnav Gupta. All rights reserved.</p></footer>
-<script src="main.js"></script></body></html>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Arnav Gupta — AI/ML Engineer. Terminal portfolio."/>
+<title>PORTFOLIO_OS v2.4.1 — Arnav Gupta</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23080808'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='%2300FF41' font-family='monospace' font-size='14' font-weight='bold'%3EAG%3C/text%3E%3C/svg%3E"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head><body>
+
+<!-- Boot splash -->
+<div id="boot-splash">
+  <div class="boot-content">
+    <div class="boot-logo">PORTFOLIO_OS v2.4.1</div>
+    <div class="boot-lines" id="boot-lines"></div>
+    <div class="boot-bar-wrap"><div id="boot-bar"></div><span id="boot-pct">0%</span></div>
+  </div>
+</div>
+
+<!-- Scroll progress -->
+<div id="scroll-bar"></div>
+
+<!-- Custom cursor -->
+<div id="cursor-dot"></div>
+
+<!-- Navbar -->
+<nav id="navbar">
+  <div class="nav-brand">
+    <span class="nav-blink"></span>
+    <span class="nav-title">PORTFOLIO_OS v2.4.1</span>
+  </div>
+  <button class="nav-ham" id="nav-ham" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home"       class="nav-link" data-section="home">./home</a></li>
+    <li><a href="#about"      class="nav-link" data-section="about">./about</a></li>
+    <li><a href="#projects"   class="nav-link" data-section="projects">./projects</a></li>
+    <li><a href="#skills"     class="nav-link" data-section="skills">./skills</a></li>
+    <li><a href="#experience" class="nav-link" data-section="experience">./experience</a></li>
+    <li><a href="#contact"    class="nav-link" data-section="contact">./contact</a></li>
+  </ul>
+</nav>
+
+<div id="nav-overlay">
+  <button id="nav-overlay-close">[ CLOSE_MENU ]</button>
+  <ul>
+    <li><a href="#home"       class="nav-link">./home</a></li>
+    <li><a href="#about"      class="nav-link">./about</a></li>
+    <li><a href="#projects"   class="nav-link">./projects</a></li>
+    <li><a href="#skills"     class="nav-link">./skills</a></li>
+    <li><a href="#experience" class="nav-link">./experience</a></li>
+    <li><a href="#contact"    class="nav-link">./contact</a></li>
+  </ul>
+</div>
+
+<!-- Hero -->
+<section id="home" class="s-hero">
+  <canvas id="bin-rain"></canvas>
+  <div class="term-window hero-term">
+    <div class="term-bar">
+      <span class="td td-r"></span><span class="td td-y"></span><span class="td td-g"></span>
+      <span class="term-bar-title">student@portfolio:~$ — BOOT SEQUENCE</span>
+    </div>
+    <div class="term-body" id="hero-body"></div>
+    <div class="hero-cta" id="hero-cta">
+      <a href="#projects" class="term-btn">[ ./view_projects ]</a>
+      <a href="#contact"  class="term-btn">[ ./contact_me ]</a>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="s-about">
+  <h2 class="s-head"><span class="tag-red">[ DECLASSIFIED ]</span> &mdash; AGENT PROFILE</h2>
+  <div class="about-grid">
+    <div class="id-card reveal-left">
+      <div class="id-avatar-box"><span class="id-initials">AG</span><div class="id-scan"></div></div>
+      <div class="id-clearance">&#9632; CLEARANCE: TOP SECRET</div>
+      <table class="id-table">
+        <tr><td class="id-k">AGENT&nbsp;ID</td><td class="id-v">AG-2024-ML</td></tr>
+        <tr><td class="id-k">DIVISION</td><td class="id-v">AI RESEARCH</td></tr>
+        <tr><td class="id-k">BASE</td><td class="id-v">VIT PUNE, IND</td></tr>
+        <tr><td class="id-k">STATUS</td><td class="id-v blink-green">&#9679; ACTIVE</td></tr>
+      </table>
+    </div>
+    <div class="about-right reveal-right">
+      <div class="term-window">
+        <div class="term-bar">
+          <span class="td td-r"></span><span class="td td-y"></span><span class="td td-g"></span>
+          <span class="term-bar-title">cat about.txt</span>
+        </div>
+        <div class="term-body">
+          <p class="dim">$ cat about.txt</p>
+          <p>AI/ML Developer specializing in deep learning, transformer architectures, and high-accuracy predictive systems. Experienced building production models for fraud detection, clinical decision support, and audio classification.</p>
+          <br/>
+          <p>Multi-discipline achiever &mdash; Multiple Olympiad Medalist (STEM), National-Level Gold Medalist in Skating, and Black Belt in Karate. Same precision. Different domain.</p>
+        </div>
+      </div>
+      <div class="stats-row">
+        <div class="stat-box reveal-up"><span class="stat-n" data-target="5">0</span><span class="stat-l">PROJECTS</span></div>
+        <div class="stat-box reveal-up"><span class="stat-n" data-target="1">0</span><span class="stat-l">PUBLICATIONS</span></div>
+        <div class="stat-box reveal-up"><span class="stat-n" data-target="3">0</span><span class="stat-l">MEDALS</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="s-projects">
+  <h2 class="s-head"><span class="prompt">$</span> ls ./projects <span class="dim">(5 entries)</span></h2>
+  <div class="proj-grid">
+
+    <div class="proj-card reveal-up">
+      <div class="card-top-bar"><span class="classif">[ CLASSIFIED ]</span></div>
+      <div class="proj-num">01</div>
+      <h3 class="proj-title">SAFEPAY AI</h3>
+      <div class="proj-type">FRAUD DETECTION SYSTEM</div>
+      <div class="proj-desc"><span class="redacted">Real-Time Payment Fraud Prevention. Dual-model NLP + ML pipeline combining SMS scam analysis with transaction risk scoring. ~85-90% accuracy with explainable risk assessments.</span></div>
+      <div class="proj-tags"><span class="pill">Python</span><span class="pill">NLP</span><span class="pill">Scikit-learn</span><span class="pill">Flask</span></div>
+      <div class="proj-links"><a href="https://github.com/NotArnav03/SafePay-AI" target="_blank" rel="noopener" class="term-btn sm">[ VIEW_REPO ]</a></div>
+    </div>
+
+    <div class="proj-card reveal-up">
+      <div class="card-top-bar"><span class="classif">[ CLASSIFIED ]</span></div>
+      <div class="proj-num">02</div>
+      <h3 class="proj-title">CLINPATH AI</h3>
+      <div class="proj-type">CLINICAL PATHWAY GENERATOR</div>
+      <div class="proj-desc"><span class="redacted">Rule-based clinical pathway engine integrated with Groq-hosted LLaMA 3.1 for patient-specific care workflows. Interactive flowchart visualization.</span></div>
+      <div class="proj-tags"><span class="pill">Python</span><span class="pill">LLaMA 3.1</span><span class="pill">Groq</span><span class="pill">React</span></div>
+      <div class="proj-links"><a href="https://github.com/NotArnav03/dynamic-clinical-pathway-generator" target="_blank" rel="noopener" class="term-btn sm">[ VIEW_REPO ]</a></div>
+    </div>
+
+    <div class="proj-card reveal-up">
+      <div class="card-top-bar"><span class="classif">[ CLASSIFIED ]</span></div>
+      <div class="proj-num">03</div>
+      <h3 class="proj-title">GENRESOTA</h3>
+      <div class="proj-type">AUDIO CLASSIFICATION</div>
+      <div class="proj-desc"><span class="redacted">Deep CNN-Transformer with temporal attention on GTZAN spectrograms. ~95% classification accuracy with optimized training workflows.</span></div>
+      <div class="proj-tags"><span class="pill">Python</span><span class="pill">PyTorch</span><span class="pill">CNN</span><span class="pill">Transformers</span></div>
+      <div class="proj-links"><a href="https://github.com/NotArnav03/gtzan-music-genre-classification" target="_blank" rel="noopener" class="term-btn sm">[ VIEW_REPO ]</a></div>
+    </div>
+
+    <div class="proj-card reveal-up">
+      <div class="card-top-bar"><span class="classif">[ CLASSIFIED ]</span></div>
+      <div class="proj-num">04</div>
+      <h3 class="proj-title">ASRIS</h3>
+      <div class="proj-type">NLP RANKING ENGINE</div>
+      <div class="proj-desc"><span class="redacted">Intelligent resume screening and ranking engine. NLP matches candidate skills against job descriptions with explainable scoring metrics.</span></div>
+      <div class="proj-tags"><span class="pill">Python</span><span class="pill">NLP</span><span class="pill">Scikit-learn</span><span class="pill">Flask</span></div>
+      <div class="proj-links"><a href="https://github.com/NotArnav03/asris" target="_blank" rel="noopener" class="term-btn sm">[ VIEW_REPO ]</a></div>
+    </div>
+
+    <div class="proj-card reveal-up">
+      <div class="card-top-bar"><span class="classif">[ CLASSIFIED ]</span></div>
+      <div class="proj-num">05</div>
+      <h3 class="proj-title">MINDMAPPER</h3>
+      <div class="proj-type">CLINICAL AI ASSISTANT</div>
+      <div class="proj-desc"><span class="redacted">Fine-tuned Mistral-7B-Instruct with QLoRA on therapy transcripts. Automates SOAP note generation with fully local, privacy-preserving inference.</span></div>
+      <div class="proj-tags"><span class="pill">Python</span><span class="pill">Mistral-7B</span><span class="pill">QLoRA</span><span class="pill">Gradio</span></div>
+      <div class="proj-links"><a href="https://github.com/NotArnav03/mindmapper" target="_blank" rel="noopener" class="term-btn sm">[ VIEW_REPO ]</a></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Interactive Terminal -->
+<section id="terminal-section" class="s-terminal">
+  <h2 class="s-head"><span class="prompt">&gt;</span> LAUNCH TERMINAL</h2>
+  <div class="term-window iterm-wrap">
+    <div class="term-bar">
+      <span class="td td-r"></span><span class="td td-y"></span><span class="td td-g"></span>
+      <span class="term-bar-title">student@portfolio:~$ &mdash; INTERACTIVE</span>
+    </div>
+    <div class="term-body iterm-out" id="iterm-out">
+      <p><span class="dim">PORTFOLIO_OS Interactive Shell v2.4.1</span></p>
+      <p><span class="dim">Type <span class="green">help</span> for available commands.</span></p>
+      <p>&nbsp;</p>
+    </div>
+    <div class="iterm-row">
+      <span class="iterm-ps">student@portfolio:~$&nbsp;</span>
+      <input id="iterm-in" class="iterm-in" type="text" autocomplete="off" spellcheck="false" placeholder="type a command..."/>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="s-skills">
+  <h2 class="s-head"><span class="prompt">$</span> cat skills.log</h2>
+  <div class="skills-grid">
+    <div class="skills-col reveal-up">
+      <h3 class="skills-cat">// LANGUAGES</h3>
+      <div class="skill-row" data-pct="90"><span class="sk-name">Python</span><div class="sk-track"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div>
+      <div class="skill-row" data-pct="70"><span class="sk-name">C++</span><div class="sk-track"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div>
+      <div class="skill-row" data-pct="65"><span class="sk-name">JavaScript</span><div class="sk-track"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div>
+    </div>
+    <div class="skills-col reveal-up">
+      <h3 class="skills-cat">// FRAMEWORKS &amp; TOOLS</h3>
+      <div class="skill-row" data-pct="82"><span class="sk-name">PyTorch</span><div class="sk-track"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div>
+      <div class="skill-row" data-pct="85"><span class="sk-name">Scikit-learn</span><div class="sk-track"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div>
+      <div class="skill-row" data-pct="78"><span class="sk-name">Transformers</span><div class="sk-track"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div>
+      <div class="skill-row" data-pct="75"><span class="sk-name">Flask</span><div class="sk-track"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div>
+    </div>
+    <div class="skills-col reveal-up">
+      <h3 class="skills-cat">// CONCEPTS</h3>
+      <div class="skill-row" data-pct="85"><span class="sk-name">Deep Learning</span><div class="sk-track"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div>
+      <div class="skill-row" data-pct="80"><span class="sk-name">NLP</span><div class="sk-track"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div>
+      <div class="skill-row" data-pct="85"><span class="sk-name">CNNs</span><div class="sk-track"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div>
+      <div class="skill-row" data-pct="75"><span class="sk-name">LLMs</span><div class="sk-track"><div class="sk-fill"></div></div><span class="sk-pct">0%</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="s-experience">
+  <h2 class="s-head"><span class="prompt">$</span> git log --experience</h2>
+  <div class="timeline">
+    <div class="tl-entry tl-right reveal-right">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <div class="tl-hash dim">commit a3f8e21</div>
+        <div class="tl-date">OCT 2024 &mdash; PRESENT</div>
+        <div class="tl-role">B.TECH CS (AI/ML)</div>
+        <div class="tl-org">Vishwakarma Institute of Technology, Pune</div>
+        <ul><li>Specialization in Artificial Intelligence &amp; Machine Learning</li><li>Research, hackathons, and open-source contribution</li></ul>
+      </div>
+    </div>
+    <div class="tl-entry tl-left reveal-left">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <div class="tl-hash dim">commit b7c2d94</div>
+        <div class="tl-date">2025</div>
+        <div class="tl-role">RESEARCH PUBLICATION</div>
+        <div class="tl-org">Springer &middot; ICAIN 2025</div>
+        <ul><li>Adaptive TabNet&ndash;&beta;-VAE Fusion Ensemble for Uncertainty-Aware Fraud Detection</li><li>Lecture Notes in Networks and Systems (LNNS)</li></ul>
+      </div>
+    </div>
+    <div class="tl-entry tl-right reveal-right">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <div class="tl-hash dim">commit e5a1b38</div>
+        <div class="tl-date">2024 &mdash; 2025</div>
+        <div class="tl-role">HACKATHON PROJECTS</div>
+        <div class="tl-org">SafePay AI &middot; ClinPath AI</div>
+        <ul><li>Real-time fraud detection with dual NLP + ML architecture</li><li>LLaMA-powered clinical pathway generator with interactive visualization</li></ul>
+      </div>
+    </div>
+    <div class="tl-entry tl-left reveal-left">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <div class="tl-hash dim">commit f9d4c17</div>
+        <div class="tl-date">PRE-2024</div>
+        <div class="tl-role">COMPETITIVE ACHIEVEMENTS</div>
+        <div class="tl-org">STEM Olympiads &middot; Skating &middot; Karate</div>
+        <ul><li>Multiple Olympiad Medalist in STEM disciplines</li><li>National-Level Gold Medalist in Skating</li><li>Black Belt in Karate</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="s-contact">
+  <h2 class="s-head"><span class="prompt">&gt;</span> ESTABLISH CONNECTION</h2>
+  <div class="contact-grid">
+    <div class="contact-info reveal-left">
+      <div class="term-window">
+        <div class="term-bar"><span class="td td-r"></span><span class="td td-y"></span><span class="td td-g"></span><span class="term-bar-title">connection_info.sh</span></div>
+        <div class="term-body" id="contact-lines"></div>
+      </div>
+    </div>
+    <div class="contact-form reveal-right">
+      <div class="term-window">
+        <div class="term-bar"><span class="td td-r"></span><span class="td td-y"></span><span class="td td-g"></span><span class="term-bar-title">send_transmission.sh</span></div>
+        <div class="term-body">
+          <form id="c-form" novalidate>
+            <div class="f-field"><label class="f-lbl">enter name:</label><input type="text" id="f-name" class="f-input" autocomplete="off"/></div>
+            <div class="f-field"><label class="f-lbl">enter email:</label><input type="email" id="f-email" class="f-input" autocomplete="off"/></div>
+            <div class="f-field"><label class="f-lbl">enter message:</label><textarea id="f-msg" class="f-input f-ta" rows="4"></textarea></div>
+            <button type="submit" class="term-btn send-btn">[ SEND_TRANSMISSION ]</button>
+            <div id="f-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 &mdash; Built on PORTFOLIO_OS v2.4.1<span class="blink-cur">_</span></p>
+  <div class="foot-links">
+    <a href="https://github.com/NotArnav03" target="_blank" rel="noopener">[GH]</a>
+    <a href="https://www.linkedin.com/in/arnav-gupta-099838329/" target="_blank" rel="noopener">[LI]</a>
+    <a href="mailto:arnav.g1010@gmail.com">[ML]</a>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body></html>
